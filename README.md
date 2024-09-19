@@ -1,6 +1,6 @@
-# ODT Document Generator
+# ODT Document Processing Tools
 
-This repository contains two Python scripts designed for working with ODT (OpenDocument Text) files. These tools allow you to generate, encrypt, obfuscate, and serve ODT files, which can be particularly useful in scenarios requiring document manipulation or security-focused operations.
+This repository contains three Python scripts designed for working with ODT (OpenDocument Text) files. These tools allow you to generate, encrypt, obfuscate, and serve ODT files, which can be particularly useful in scenarios requiring document manipulation or security-focused operations.
 
 ## Scripts Overview
 
@@ -63,7 +63,32 @@ python mass-odt-enc-obf.py --dir ./odt_files --encrypt-strings enc_strings.txt -
 ```bash
 python mass-odt-enc-obf.py --dir ./odt_files --obfuscate
 ```
-  
+
+### 3. `mass-odt-gen.py`
+
+This script is designed to generate a mix of benign and malicious ODT documents based on a specified ratio. It uses the `odt-generator.py` script to create the documents and ensures filename uniqueness.
+
+#### Features:
+- Generates up to 50 unique ODT files with a specified ratio of benign to malicious documents.
+- Automatically creates an output folder to store the generated files.
+- Provides a summary file listing the generated files and their types.
+
+#### Usage:
+```bash
+python mass-odt-gen.py <num_files> <percentage_malicious>
+```
+
+#### Arguments:
+- `num_files`: The number of files to generate, up to a maximum of 50 to ensure uniqueness.
+- `percentage_malicious`: The percentage of files that should be malicious.
+
+#### Example:
+```bash
+python mass-odt-gen.py 30 40
+```
+
+This command will generate 30 ODT files, 40% of which will be malicious, and store them in a newly created folder.
+
 ## Installation
 
 To use these scripts, you need to have Python installed on your system along with the required packages. You can install the dependencies using the following command:
