@@ -2,6 +2,17 @@
 
 This repository contains three Python scripts designed for working with ODT (OpenDocument Text) files. These tools allow you to generate, encrypt, obfuscate, and serve ODT files, which can be particularly useful in scenarios requiring document manipulation or security-focused operations.
 
+## Execution Flow 
+mass-odt-gen.py -> mass-odt-enc-obf.py 
+
+Prerequisites for mass-odt-gen.py:
+- benign_template.odt 
+- malicious_template.odt 
+
+Prerequsites for mass-odt-enc-obf.py:
+- enc_strings.txt 
+- obf_strings.txt
+
 ## Scripts Overview
 
 ### 1. `odt-generator.py`
