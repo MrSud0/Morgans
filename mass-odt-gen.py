@@ -60,12 +60,12 @@ def generate_documents(num_files, percentage_malicious, output_folder):
 
     for _ in range(num_files - malicious_count):
         filename = os.path.join(output_folder, local_file_names.pop() + "_benign.odt")
-        subprocess.run(["python", "odt-generator.py", "benign", "--benign-template", "adv_benign.odt", "--output", filename], check=True)
+        subprocess.run(["python", "odt-generator.py", "benign", "--benign-template", "benign_template.odt", "--output", filename], check=True)
         summary_entries.append(f"{filename}: Benign")
 
     for _ in range(malicious_count):
         filename = os.path.join(output_folder, local_file_names.pop() + "_malicious.odt")
-        subprocess.run(["python", "odt-generator.py", "malicious", "--malicious-template", "adv.odt", "--output", filename], check=True)
+        subprocess.run(["python", "odt-generator.py", "malicious", "--malicious-template", "malicious_template.odt", "--output", filename], check=True)
         summary_entries.append(f"{filename}: Malicious")
 
     with open(os.path.join(output_folder, "summary.txt"), "w") as summary_file:
