@@ -1,0 +1,6 @@
+XORDecrypt
+HexToBytes
+Stager
+WriteKeyToFile
+GetDocBaseName
+Executor

