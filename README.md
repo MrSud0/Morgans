@@ -1,7 +1,3 @@
-Here’s the updated README with the tool renamed to "Morgans," along with instructions for displaying a nice banner when the main script is executed:
-
----
-
 # Morgans
 
 Morgans is a comprehensive toolset designed for processing ODT (OpenDocument Text) files. It integrates multiple functionalities, including document generation, encryption, obfuscation, and serving files via a simple HTTP server. This tool is ideal for scenarios requiring document manipulation or security-focused operations.
@@ -128,6 +124,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
----
-
-This updated README file includes instructions for using the tool "Morgans" and ensures that users will see a banner when they execute the main script.
